@@ -1,11 +1,11 @@
 language: python
 python:
   - 2.7
-
+#install the dependencies
 install:
   - sudo apt-get install python-pip
   - sudo pip install django flake8
-  
+#run tests  
 script:
   - python manage.py migrate
   - python manage.py test
