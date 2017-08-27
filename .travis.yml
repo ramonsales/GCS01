@@ -1,0 +1,12 @@
+language: python
+python:
+  - 2.7
+
+install:
+  - sudo apt-get install python-pip
+  - sudo pip install django flake8
+  
+script:
+  - python manage.py migrate
+  - python manage.py test
+  - flake8 --exclude polls/migrations/,manage.py
