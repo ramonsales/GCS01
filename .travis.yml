@@ -8,3 +8,7 @@ install:
 script:
   - python manage.py migrate
   - python manage.py test
+
+deploy:
+  provider: heroku
+  api_key: sudo apt-get install ruby2.1-dev
