@@ -126,3 +126,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
+
+ALLOWED_HOSTS = ['desolate-basin-69154.herokuapp.com', 'localhost', 'desolate-basin-69154.herokuapp.com']
