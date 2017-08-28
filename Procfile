@@ -1,2 +1,2 @@
-web: gunicorn gettingstarted.wsgi --log-file -
+web: gunicorn djangobasico.wsgi --log-file -
 python manage.py migrate
